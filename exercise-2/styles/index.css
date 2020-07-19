@@ -14,42 +14,66 @@ body {
 
 h1 {
     color: #fff;
+    font-family: Georgia;
     font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
     width: 100%;
 }
 
 h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
+    font-family: Georgia;
     font-weight: 100;
     font-size: 22px;
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    text-transform: capitalize;
 }
 
 p {
     color: AliceBlue;
+    font-family: Helvetica;
+    font-size: 18px;
     line-height: 1.3em;
     text-align: left;
     width: 100%;
 }
 
+p::first-line {
+    font-weight: bold;
+}
+
 .image {
+    background-image: url("../img/background-img.jpg");
     background-size: cover;
     background-position: center;
     height: 300px;
 }
 
 .caption {
+    background-color: white;
+    color: black;
     display: block;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
+    font-style: italic;
     line-height: 14px;
     margin-left: 20px;
+    opacity: 0.75;
     padding: 10px;
     position: relative;
     top: 80%;
     width: 60%;
 }
 
+.caption a {
+    text-decoration: none;
+}
+
+.caption a:hover {
+    color: purple;
+    text-decoration: none;
+}
