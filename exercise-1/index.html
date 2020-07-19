@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <title>练习-1：css selector</title>
     <style>
-       /* you can test your css at here */
+        /* you can test your css at here */
+        /*.section .title {*/
+        /*    text-align: center;*/
+        /*    color: tomato;*/
+        /*}*/
+
+        /*.section.title {*/
+        /*    text-align: center;*/
+        /*    color: tomato;*/
+        /*}*/
+
+        /*.section, .title {*/
+        /*    text-align: center;*/
+        /*    color: tomato;*/
+        /*}*/
+
+        /*.section > .title {*/
+        /*    text-align: center;*/
+        /*    color: tomato;*/
+        /*}*/
+
+        .section .title { color:red; }
+        #title { color:green; }
+        .title { color:yellow !important; }
+        .section > h1 { color:blue; }
     </style>
 </head>
 <body>
+<!--    <div class="section">-->
+<!--        <h1 class="title">title</h1>-->
+<!--        <h1 class="aaa">-->
+<!--            <p class="title">aaa</p>-->
+<!--        </h1>-->
+<!--        <h1 class="title">title</h1>-->
+<!--        <h1 class="ccc">ccc</h1>-->
+<!--    </div>-->
+
+<!--    <div class="section">-->
+<!--        <h1 class="bbb">bbb</h1>-->
+<!--        <h1 class="section title">ddd</h1>-->
+<!--    </div>-->
+
     <div class="section">
         <h1 id="title" class="title">title</h1>
     </div>
